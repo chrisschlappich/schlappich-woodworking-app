@@ -66,17 +66,26 @@ code {
   .nav-bar-link {
     padding: 25px;
   }
+  .cart-link {
+    justify-content: end;
+  }
 }
 
 @media (max-width: 1200px) {
   .header-logo {
     width: 40%;
   }
+  .cart-link {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
   .header-logo {
     width: 40%;
+  }
+  .cart-link {
+    justify-content: center;
   }
 }
 
@@ -109,6 +118,21 @@ code {
 
 .nav-bar-link:hover {
   color: lightgrey;
+}
+
+#cart-container {
+  flex: 1;
+}
+
+.cart-link {
+  display: flex;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.cart-logo {
+  width: 60px; /* Adjust the size as needed */
+  height: auto;
 }
 
 .products-container {

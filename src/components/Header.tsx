@@ -12,6 +12,11 @@ function Header(): React.ReactElement {
                 <Link to="/faq" className="nav-bar-link">FAQ</Link>
                 <Link to="/contact" className="nav-bar-link">Contact</Link>
             </div>
+            <div id="cart-container">
+            <Link to="/cart" className="cart-link">
+                <img src="cart_logo.png" alt="Cart" className="cart-logo" />
+            </Link>
+            </div>
         </div>
     )
 }
