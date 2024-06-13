@@ -1,0 +1,9 @@
+[
+    { "id": "001", "name": "Plant Stand", "price": 99.99, "sale_price": 73.99, "image_url": "/plantstand.jpg" },
+    { "id": "002", "name": "Shore Chair", "price": 199.99, "sale_price": 149.99, "image_url": "/shorechair.jpg" },
+    { "id": "003", "name": "Picnic Table", "price": 199.99, "sale_price": 119.99, "image_url": "/picnictable.jpg" },
+    { "id": "004", "name": "Bathroom Shelf", "price": 39.99, "sale_price": 29.99, "image_url": "/bathroomshelf.jpg" },
+    { "id": "005", "name": "Spice Rack", "price": 59.99, "sale_price": 49.99, "image_url": "/spicerack.jpg" },
+    { "id": "006", "name": "Bed Frame", "price": 199.99, "sale_price": 159.99, "image_url": "/bedframe.jpg"},
+    { "id": "007", "name": "Dresser", "price": 99.99, "sale_price": 89.99, "image_url": "/dresser.jpg"}
+]  

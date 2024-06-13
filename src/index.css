@@ -1,4 +1,4 @@
-hrml, body {
+html, body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -30,6 +30,11 @@ code {
 .main-container {
   flex: 1;
   padding: 10px 20px 10px 20px;
+}
+
+.route-header {
+  color: #232F3E;
+  text-align: center;
 }
 
 .header-container {
@@ -100,4 +105,71 @@ code {
   color: inherit;
   flex: auto;
   font-weight: bold;
+}
+
+.nav-bar-link:hover {
+  color: lightgrey;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the product cards */
+  gap: 10px; /* Add gap between product cards */
+  padding: 10px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px; /* Fixed width for better alignment */
+  margin: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  overflow: hidden; /* Ensure child elements do not overflow */
+  transition: transform 0.2s; /* Add a transition effect */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.product-card-image {
+  width: 100%; /* Scale to the width of the container */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 150px; /* Set the maximum height */
+  object-fit: cover; /* Cover the container */
+  border-bottom: 1px solid lightgray; 
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-card-name {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.product-card-price {
+  font-size: small;
+  text-align: center;
+  text-decoration: line-through;
+  color: red;
+}
+
+.product-card-sale-price {
+  font-weight: bold;
+  text-align: center;
+  color: green;
+}
+
+div[class*="price"]::before {
+  content: "$";
 }
