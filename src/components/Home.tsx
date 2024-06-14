@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home(): React.ReactElement {
     return (
-        <div>
+        <div className="main-container-no-pad">
             <div className="home-hero-container">
                 <div className="home-hero-content-container">
                     <h2 id="home-page-hero-title">Handcrafted woodwork for everyone!</h2>

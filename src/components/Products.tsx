@@ -18,7 +18,7 @@ interface ProductsProps {
 
 function Products({ products }: ProductsProps ): React.ReactElement {
     return (
-        <div>
+        <div className="main-container-no-pad">
             <h1 className="route-header">Shop Our Products</h1>
             <div className="products-container">
                 {products.map((product: Product) => (
