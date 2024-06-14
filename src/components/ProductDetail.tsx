@@ -43,7 +43,7 @@ function ProductDetail({ products }: ProductsProps): React.ReactElement {
                         <p className="product-card-price">${product.price}</p>
                         <p className="product-card-sale-price">${product.sale_price}</p>
                         <button className="call-to-action-button">
-                            <Link to="/" className="link">Home</Link>
+                            <Link to="/products" className="link">Back to products</Link>
                         </button>
                     </div>
             </div>

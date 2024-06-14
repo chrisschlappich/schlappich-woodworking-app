@@ -317,6 +317,7 @@ div[class*="price"]::before {
   font-weight: bold;
   background-color: #232F3E;
   border-radius: 15px;
+  margin: 10px;
 }
 
 .call-to-action-button:hover {
@@ -341,7 +342,16 @@ div[class*="price"]::before {
 }
 
 .product-detail-content-container {
+  display: flex;
   flex: auto;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-detail-image-container {
+  flex: 1;
   text-align: center;
 }
 
@@ -356,6 +366,17 @@ div[class*="price"]::before {
   width: auto;
   border-radius: 20px;
   margin: 20px;
+}
+
+#cart-disclaimer {
+  color: #232F3E;
+  font-style: italic;
+  text-align: center;
+}
+
+#main-cart-container {
+  display: block;
+  text-align: center;
 }
 
 
