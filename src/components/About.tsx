@@ -6,7 +6,7 @@ function AboutUs(): React.ReactElement {
             <h1 className="route-header">About Us</h1>
             <div className="about-us-container">
                 <div className="about-us-image-container">
-                    <img id="about-us-image" src="/about_us.jpg" alt="Me and my dad" />
+                    <img id="about-us-image" src={`${process.env.PUBLIC_URL}/about_us.jpg`} alt="Me and my dad" />
                 </div>
                 <div className="about-us-content-container">
                     <p className="about-us-paragraph">Welcome to Schlappich & Schlappich Custom Woodworking, your local experts in custom woodworking. 

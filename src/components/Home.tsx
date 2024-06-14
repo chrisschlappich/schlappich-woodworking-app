@@ -10,7 +10,7 @@ function Home(): React.ReactElement {
                     <p id="satisfaction-guaranteed">Satisfaction guaranteed.</p>
                 </div>
                 <div className="home-hero-image-container">
-                    <img id="home-hero-image" src="/shorechair.jpg" alt="Shore chair" />
+                    <img id="home-hero-image" src={`${process.env.PUBLIC_URL}/shorechair.jpg`} alt="Shore chair" />
                 </div>
             </div>
 
