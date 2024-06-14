@@ -24,6 +24,7 @@ function App() {
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="*" element={<Home />} />
       </Routes>
       <Footer/>
     </div>
