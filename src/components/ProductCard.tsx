@@ -12,7 +12,7 @@ interface ProductCardProps {
 function ProductCard({key, name, price, saleprice, imageurl} : ProductCardProps): React.ReactElement {
     return (
         <div className="product-card">
-            <img className="product-card-image" src={imageurl} alt="Picture"></img>
+            <img className="product-card-image" src={`${process.env.PUBLIC_URL}/${imageurl}`} alt="Picture"></img>
             <div className="product-details-container">
                 <div className="product-card-name">{name}</div>
                 <div className="product-card-price">{price}</div>

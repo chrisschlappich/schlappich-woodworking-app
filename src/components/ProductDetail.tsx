@@ -36,7 +36,7 @@ function ProductDetail({ products }: ProductsProps): React.ReactElement {
         <div className="main-container">
             <div className="product-detail-container">
                     <div className="product-detail-image-container">
-                        <img className="product-image" src={product.image_url} alt="Picture of product" />
+                        <img className="product-image" src={`${process.env.PUBLIC_URL}/${product.image_url}`} alt="Picture of product" />
                     </div>
                     <div className="product-detail-content-container">
                         <p className="product-name">{product.name}</p>
