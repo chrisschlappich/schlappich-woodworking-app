@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=./" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/schlappich-woodworking-app/" />
     <script type="text/javascript">
-      // Redirect to the root URL
-      var pathname = window.location.pathname;
-      var base = window.location.protocol + "//" + window.location.host + "/schlappich-woodworking-app";
-      window.location.href = base + pathname;
+      // JavaScript redirect in case meta refresh doesn't work
+      var redirectPath = window.location.pathname.replace(
+        "/schlappich-woodworking-app/",
+        ""
+      );
+      window.location.replace("/schlappich-woodworking-app/" + redirectPath);
     </script>
   </head>
   <body>
-    <p>If you are not redirected automatically, follow this <a href="./">link</a>.</p>
+    <p>If you are not redirected automatically, follow this <a href="/schlappich-woodworking-app/">link</a>.</p>
   </body>
 </html>
