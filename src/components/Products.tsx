@@ -1,5 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard"
+import { Link } from "react-router-dom";
 
 // Define interface for Product
 interface Product {
@@ -17,18 +18,27 @@ interface ProductsProps {
 
 function Products({ products }: ProductsProps ): React.ReactElement {
     return (
-        <div className="main-container">
-            <h1 className="route-header">Products</h1>
+        <div>
+            <h1 className="route-header">Shop Our Products</h1>
             <div className="products-container">
                 {products.map((product: Product) => (
-                    <ProductCard 
-                        key={product.id} 
-                        name={product.name} 
-                        price={product.price} 
-                        saleprice={product.sale_price}
-                        imageurl={product.image_url}
-                    />
+                    <Link to={`/product/${product.id}`} className="link">
+                        <ProductCard 
+                            key={product.id} 
+                            name={product.name} 
+                            price={product.price} 
+                            saleprice={product.sale_price}
+                            imageurl={product.image_url}
+                        />
+                    </Link>
                 ))}
+            </div>
+
+            <div id="ready-to-start-container" className="home-cta-container">
+                    <h4 className="call-to-action">Don't see what you want above? Contact us to get started.</h4>
+                    <Link to="/contact">
+                        <button className="call-to-action-button">Get in Touch</button>
+                    </Link>
             </div>
         </div>
     )

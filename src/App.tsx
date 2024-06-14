@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import { Routes, Route} from 'react-router-dom';
 import './App.css';
 import Header from './components/Header'
@@ -9,6 +8,7 @@ import About from './components/About'
 import Products from './components/Products'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
+import ProductDetail from './components/ProductDetail';
 import data from './inventory.json'
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/products" element={<Products products={data} />} />
+        <Route path="/product/:sku_id" element={<ProductDetail products={data} />} />
         <Route path="/faq" element={<FAQ/>} />
         <Route path="/contact" element={<Contact/>} />
       </Routes>
