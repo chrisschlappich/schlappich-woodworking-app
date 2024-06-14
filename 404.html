@@ -6,15 +6,8 @@
     <script type="text/javascript">
       // Redirect to the correct path if needed
       (function() {
-        var origin = window.location.origin;
-        console.log("Origin: ", origin);
         var pathname = window.location.pathname;
         console.log("Pathname: ", pathname);
-        var newUrl = origin + "/schlappich-woodworking-app" + pathname;
-        console.log("New URL: ", newUrl);
-        if (!window.location.href.includes('/schlappich-woodworking-app' + pathname)) {
-          window.location.replace(newUrl);
-        }
       })();
     </script>
   </head>
