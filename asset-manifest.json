@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/schlappich-woodworking-app/static/css/main.0a5df69c.css",
+    "main.js": "/schlappich-woodworking-app/static/js/main.ae61fae5.js",
+    "static/js/453.cbf94d97.chunk.js": "/schlappich-woodworking-app/static/js/453.cbf94d97.chunk.js",
+    "index.html": "/schlappich-woodworking-app/index.html",
+    "main.0a5df69c.css.map": "/schlappich-woodworking-app/static/css/main.0a5df69c.css.map",
+    "main.ae61fae5.js.map": "/schlappich-woodworking-app/static/js/main.ae61fae5.js.map",
+    "453.cbf94d97.chunk.js.map": "/schlappich-woodworking-app/static/js/453.cbf94d97.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a5df69c.css",
+    "static/js/main.ae61fae5.js"
+  ]
+}
